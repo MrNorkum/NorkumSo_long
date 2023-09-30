@@ -1,16 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   put_image.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 11:13:48 by hkeles            #+#    #+#             */
-/*   Updated: 2023/09/28 11:13:50 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../so_long.h"
+#include "minilibx/mlx.h"
+#include "../libft/libft.h"
 
 int	keyboard(int keycode, t_map *map)
 {
@@ -37,7 +27,7 @@ int	keyboard(int keycode, t_map *map)
 	return (0);
 }
 
-void	basic_render(t_map *map)
+void	render_basic(t_map *map)
 {
 	int	x;
 	int	y;
@@ -67,7 +57,7 @@ void	basic_render(t_map *map)
 
 int	render(t_map *map)
 {
-	basic_render(map);
+	render_basic(map);
 	mlx_put_image_to_window
 		(map->ptr, map->win, map->player,
 		map->p_loc[0] * PIXEL, map->p_loc[1] * PIXEL);

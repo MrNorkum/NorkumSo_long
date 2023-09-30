@@ -1,17 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 15:51:58 by hkeles            #+#    #+#             */
-/*   Updated: 2023/09/28 15:51:59 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../minilibx/mlx.h"
 #include "../so_long.h"
+#include "../libft/libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 void	exitt(t_map *map)
 {

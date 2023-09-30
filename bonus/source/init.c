@@ -1,16 +1,8 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   init.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 15:51:39 by hkeles            #+#    #+#             */
-/*   Updated: 2023/09/28 15:51:41 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../so_long.h"
+#include "../minilibx/mlx.h"
+#include "../libft/libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 void	init_mlx(t_map *map)
 {

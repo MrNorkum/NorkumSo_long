@@ -1,16 +1,8 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   map_split.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 11:13:17 by hkeles            #+#    #+#             */
-/*   Updated: 2023/09/28 11:13:19 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../so_long.h"
+#include "../libft/libft.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 void	map_split(t_map *map)
 {

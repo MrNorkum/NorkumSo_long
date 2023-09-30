@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "../so_long.h"
+#include "../minilibx/mlx.h"
+#include <unistd.h>
 
 int	ft_exit(t_map *map)
 {

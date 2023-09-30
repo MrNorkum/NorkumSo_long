@@ -1,23 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/19 05:27:17 by hkeles            #+#    #+#             */
-/*   Updated: 2023/08/19 05:27:18 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 #include <stdlib.h>
 
-char	**free_malloc(char **arr, int i)
+char	**free_malloc(char **tab, int i)
 {
-	while (arr[i])
-		free(arr[i++]);
-	return (free(arr), NULL);
+	while (tab[i])
+		free(tab[i++]);
+	return (free(tab), NULL);
 }
 
 int	wc(char const *s, char c)

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/19 05:23:00 by hkeles            #+#    #+#             */
-/*   Updated: 2023/08/19 05:23:02 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdlib.h>
 
 int	ft_numlen(int num)
@@ -29,25 +17,25 @@ int	ft_numlen(int num)
 char	*ft_itoa(int n)
 {
 	int		len;
-	char	*putnbr;
+	char	*arr;
 	long	nb;
 
 	nb = n;
 	len = ft_numlen(nb);
 	if (n < 0)
 		nb = -nb;
-	putnbr = (char *)malloc(sizeof(char) * len);
-	if (!putnbr)
+	arr = (char *)malloc(sizeof(char) * len);
+	if (!arr)
 		return (NULL);
 	if (n < 0)
-		putnbr[0] = '-';
+		arr[0] = '-';
 	if (n == 0)
-		putnbr[0] = '0';
-	putnbr[--len] = '\0';
+		arr[0] = '0';
+	arr[--len] = '\0';
 	while (nb > 0)
 	{
-		putnbr[--len] = nb % 10 + 48;
+		arr[--len] = nb % 10 + 48;
 		nb /= 10;
 	}
-	return (putnbr);
+	return (arr);
 }

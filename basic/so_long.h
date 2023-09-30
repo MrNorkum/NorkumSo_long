@@ -1,23 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 11:11:59 by hkeles            #+#    #+#             */
-/*   Updated: 2023/09/28 11:12:01 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef SO_LONG_H
 # define SO_LONG_H
-
-# include "libft/libft.h"
-# include "minilibx/mlx.h"
-# include <stdlib.h>
-# include <unistd.h>
-# include <fcntl.h>
 
 # define PIXEL 64
 # define ESC 53
