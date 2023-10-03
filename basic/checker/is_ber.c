@@ -1,7 +1,7 @@
 #include "../so_long.h"
 #include "../libft/libft.h"
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void	is_ber(char **av, t_map *map)
 {

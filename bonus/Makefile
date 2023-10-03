@@ -39,8 +39,9 @@ clean:
 	@make -C $(LIBFT_PATH) clean
 	@make -C $(MINILIBX_PATH) clean
 
-fclean:	clean
+fclean:
 	@make -C $(LIBFT_PATH) fclean
+	@make -C $(MINILIBX_PATH) clean
 	@$(RM) $(NAME)
 
 re:					fclean all

@@ -22,25 +22,26 @@ LIBFT			=	$(LIBFT_PATH)/libft.a
 
 MINILIBX_PATH		=	./minilibx
 
-all:				$(NAME)
+all:	$(NAME)
 
-$(NAME):			$(LIBFT) mlx
-					$(CC) $(CFLAGS) -o $(NAME) $(SRC) $(LIBFT) -framework OpenGL -framework AppKit -L$(MINILIBX_PATH) -lmlx
-					$(MV) $(NAME) ..
+$(NAME):	$(LIBFT) mlx
+	@$(CC) $(CFLAGS) -o $(NAME) $(SRC) $(LIBFT) -framework OpenGL -framework AppKit -L$(MINILIBX_PATH) -lmlx
+	@$(MV) $(NAME) ..
 
 $(LIBFT):
-					make -C $(LIBFT_PATH) all
+	@make -C $(LIBFT_PATH) all
 
 mlx:
-					make -C $(MINILIBX_PATH) all
+	@make -C $(MINILIBX_PATH) all
 
 clean:
-					make -C $(LIBFT_PATH) clean
-					make -C $(MINILIBX_PATH) clean
+	@make -C $(LIBFT_PATH) clean
+	@make -C $(MINILIBX_PATH) clean
 
-fclean:				clean
-					make -C $(LIBFT_PATH) fclean
-					$(RM) $(NAME)
+fclean:
+	@make -C $(LIBFT_PATH) fclean
+	@make -C $(MINILIBX_PATH) clean
+	@$(RM) $(NAME)
 
 re:					fclean all
 

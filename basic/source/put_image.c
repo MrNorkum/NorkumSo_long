@@ -1,6 +1,7 @@
 #include "../so_long.h"
-#include "minilibx/mlx.h"
 #include "../libft/libft.h"
+#include "../minilibx/mlx.h"
+#include <unistd.h>
 
 int	keyboard(int keycode, t_map *map)
 {
@@ -27,7 +28,7 @@ int	keyboard(int keycode, t_map *map)
 	return (0);
 }
 
-void	render_basic(t_map *map)
+void	basic_render(t_map *map)
 {
 	int	x;
 	int	y;
@@ -57,7 +58,7 @@ void	render_basic(t_map *map)
 
 int	render(t_map *map)
 {
-	render_basic(map);
+	basic_render(map);
 	mlx_put_image_to_window
 		(map->ptr, map->win, map->player,
 		map->p_loc[0] * PIXEL, map->p_loc[1] * PIXEL);

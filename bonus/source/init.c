@@ -1,6 +1,6 @@
 #include "../so_long.h"
-#include "../minilibx/mlx.h"
 #include "../libft/libft.h"
+#include "../minilibx/mlx.h"
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -68,8 +68,8 @@ void	init_enemies(t_map *map)
 
 void	init_control(t_map *map)
 {
-	if (!map->player || !map->enemyl || !map->enemyr)
+	if (!map->player || !map->enemyl || !map->enemyr || !map->win)
 		return (write(1, "Xpm file could not be read\n", 27), exitt(map));
-	if (!map->coin || !map->wall || !map->exit || !map->ground)
+	if (!map->coin || !map->wall || !map->exit || !map->ground || !map->ptr)
 		return (write(1, "Xpm file could not be read\n", 27), exitt(map));
 }

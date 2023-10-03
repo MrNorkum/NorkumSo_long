@@ -38,4 +38,6 @@ void	is_c_e_p(t_map *map)
 	}
 	if (map->c_cont <= 0 || map->e_cont != 1 || map->p_cont != 1)
 		return (write(2, "C_E_P Error\n", 11), exitt(map));
+	if (map->en_cont > 20)
+		return (write(2, "Too many enemies\n", 17), exitt(map));
 }

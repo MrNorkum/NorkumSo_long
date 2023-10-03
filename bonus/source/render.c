@@ -1,7 +1,8 @@
 #include "../so_long.h"
-#include "../minilibx/mlx.h"
 #include "../libft/libft.h"
+#include "../minilibx/mlx.h"
 #include <stdlib.h>
+#include <unistd.h>
 
 void	render_basic(t_map *map)
 {

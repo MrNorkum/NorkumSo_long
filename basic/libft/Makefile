@@ -13,6 +13,9 @@ SRC =	./ft_split.c		\
 		./ft_strlen.c		\
 		./ft_strncmp.c		\
 		./ft_strrchr.c		\
+		./ft_strtrim.c		\
+		./ft_substr.c		\
+		./ft_printf.c		\
 		./get_next_line.c
 
 OBJ = $(addprefix $(OBJDIR)/,$(notdir $(SRC:.c=.o)))

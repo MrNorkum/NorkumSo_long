@@ -17,25 +17,25 @@ int	ft_numlen(int num)
 char	*ft_itoa(int n)
 {
 	int		len;
-	char	*arr;
+	char	*putnbr;
 	long	nb;
 
 	nb = n;
 	len = ft_numlen(nb);
 	if (n < 0)
 		nb = -nb;
-	arr = (char *)malloc(sizeof(char) * len);
-	if (!arr)
+	putnbr = (char *)malloc(sizeof(char) * len);
+	if (!putnbr)
 		return (NULL);
 	if (n < 0)
-		arr[0] = '-';
+		putnbr[0] = '-';
 	if (n == 0)
-		arr[0] = '0';
-	arr[--len] = '\0';
+		putnbr[0] = '0';
+	putnbr[--len] = '\0';
 	while (nb > 0)
 	{
-		arr[--len] = nb % 10 + 48;
+		putnbr[--len] = nb % 10 + 48;
 		nb /= 10;
 	}
-	return (arr);
+	return (putnbr);
 }

@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include <unistd.h>
+
 static inline void	*ft_free_stash(char **stash, int create_line)
 {
 	char	*line;

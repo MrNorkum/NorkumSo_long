@@ -16,7 +16,9 @@ clean:
 	@make -C $(BASIC_PATH) clean
 	@make -C $(BONUS_PATH) clean
 
-fclean: clean
+fclean:
+	@make -C $(BASIC_PATH) fclean
+	@make -C $(BONUS_PATH) fclean
 	@$(RM) $(NAME_BASIC) $(NAME_BONUS)
 
 re: fclean all
