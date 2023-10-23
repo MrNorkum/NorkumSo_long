@@ -36,7 +36,6 @@ void	init_animation(t_map *map)
 	int		y;
 	int		z;
 
-	init_mlx(map);
 	z = -1;
 	while (++z < 146)
 	{
